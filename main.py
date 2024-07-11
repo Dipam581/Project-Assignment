@@ -49,7 +49,7 @@ async def author(author: SchemaAuthor):
 
 @app.get('/author/')
 async def author():
-    author = db.session.query(ModelAuthor).all()
+    author= db.session.query(ModelAuthor).all()
     return author
 
 
